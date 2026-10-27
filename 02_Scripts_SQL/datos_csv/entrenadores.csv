@@ -1,0 +1,16 @@
+EntrenadorID,Nombre,Apellido,Especialidad,Email,Estado
+1,Carlos,Mejía,Ciclismo indoor,carlos.mejia@gymvital.example,Activo
+2,Ana,Martínez,Yoga y Pilates,ana.martinez@gymvital.example,Activo
+3,Luis,Hernández,Entrenamiento funcional,luis.hernandez@gymvital.example,Activo
+4,María,Flores,Baile,maria.flores@gymvital.example,Activo
+5,José,Ramírez,Boxeo,jose.ramirez@gymvital.example,Activo
+6,Karla,Portillo,Yoga y Pilates,karla.portillo@gymvital.example,Activo
+7,Diego,Orellana,HIIT,diego.orellana@gymvital.example,Activo
+8,Sofía,Cruz,Baile,sofia.cruz@gymvital.example,Activo
+9,Ricardo,Alvarado,Ciclismo indoor,ricardo.alvarado@gymvital.example,Activo
+10,Daniela,Rivas,Entrenamiento funcional,daniela.rivas@gymvital.example,Activo
+11,Fernando,Guzmán,CrossFit,fernando.guzman@gymvital.example,Activo
+12,Gabriela,Cáceres,Baile,gabriela.caceres@gymvital.example,Activo
+13,Óscar,Menjívar,Boxeo,oscar.menjivar@gymvital.example,Activo
+14,Paola,Chávez,Yoga y Pilates,paola.chavez@gymvital.example,Inactivo
+15,Mauricio,Serrano,HIIT,mauricio.serrano@gymvital.example,Inactivo

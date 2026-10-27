@@ -1,0 +1,114 @@
+VALIDACION DE LOS ARCHIVOS CSV - GimnasioDB
+
+0. Encabezados y conteo de filas
+  [OK]    socios.csv: columnas correctas (2000 filas)
+  [OK]    planes.csv: columnas correctas (5 filas)
+  [OK]    entrenadores.csv: columnas correctas (15 filas)
+  [OK]    tipos_clase.csv: columnas correctas (12 filas)
+  [OK]    salas.csv: columnas correctas (5 filas)
+  [OK]    membresias.csv: columnas correctas (4800 filas)
+  [OK]    sesiones.csv: columnas correctas (3000 filas)
+  [OK]    pagos.csv: columnas correctas (9199 filas)
+  [OK]    reservas.csv: columnas correctas (24545 filas)
+  [OK]    asistencias.csv: columnas correctas (21284 filas)
+
+1. Catalogos (planes, entrenadores, tipos de clase, salas)
+  [OK]    planes: IDs consecutivos
+  [OK]    planes: Nombre unico
+  [OK]    planes: DuracionDias > 0 y Precio > 0
+  [OK]    planes: Estado valido
+  [OK]    entrenadores: IDs consecutivos
+  [OK]    entrenadores: Email unico
+  [OK]    entrenadores: Estado valido
+  [OK]    tipos_clase: IDs consecutivos
+  [OK]    tipos_clase: Nombre unico
+  [OK]    tipos_clase: DuracionMin > 0
+  [OK]    tipos_clase: Nivel valido
+  [OK]    salas: IDs consecutivos
+  [OK]    salas: Nombre unico
+  [OK]    salas: Capacidad > 0
+
+2. Socios
+  [OK]    socios: IDs consecutivos
+  [OK]    socios: Documento con formato 00000000-0
+  [OK]    socios: Documento unico
+  [OK]    socios: Email unico
+  [OK]    socios: Email valido (con @, maximo 100 caracteres)
+  [OK]    socios: Nombre y Apellido no vacios (maximo 50)
+  [OK]    socios: Telefono vacio o de maximo 15 caracteres
+  [OK]    socios: FechaNacimiento anterior a FechaRegistro
+  [OK]    socios: edad al registrarse entre 16 y 70 anios
+  [OK]    socios: FechaRegistro entre 2025-01-01 y 2026-09-30
+  [OK]    socios: Estado valido
+
+3. Membresias
+  [OK]    membresias: IDs consecutivos
+  [OK]    membresias: SocioID existe
+  [OK]    membresias: PlanID existe
+  [OK]    membresias: FechaFin >= FechaInicio
+  [OK]    membresias: FechaFin = FechaInicio + DuracionDias del plan
+  [OK]    membresias: FechaInicio no anterior al registro del socio
+  [OK]    membresias: FechaInicio no es futura (hasta 2026-10-25)
+  [OK]    membresias: Estado valido
+  [OK]    membresias: Vencida termina hasta hoy; Activa termina despues de hoy
+  [OK]    membresias: cada socio tiene entre 1 y 5
+  [OK]    membresias: las de un mismo socio no se solapan
+
+4. Sesiones de clase
+  [OK]    sesiones: IDs consecutivos
+  [OK]    sesiones: TipoClaseID, EntrenadorID y SalaID existen
+  [OK]    sesiones: no hay dos con la misma SalaID y FechaHora
+  [OK]    sesiones: FechaHora entre 2025-01-01 y 2026-10-31
+  [OK]    sesiones: horario de 06:00 a 21:00, en punto o y media
+  [OK]    sesiones: 0 < CupoMaximo <= capacidad de la sala
+  [OK]    sesiones: Estado valido y coherente con la fecha
+  [OK]    sesiones: ninguna sala tiene dos clases solapadas
+  [OK]    sesiones: ningun entrenador tiene dos clases solapadas
+
+5. Pagos
+  [OK]    pagos: IDs consecutivos
+  [OK]    pagos: MembresiaID existe
+  [OK]    pagos: Monto > 0
+  [OK]    pagos: MetodoPago valido
+  [OK]    pagos: Estado valido
+  [OK]    pagos: ninguna FechaPago posterior a 2026-10-25
+  [OK]    pagos: FechaPago no anterior al registro del socio
+  [OK]    pagos: cada membresia tiene entre 1 y 4 pagos
+  [OK]    pagos: cuotas Pagado + Pendiente suman el precio del plan
+
+6. Reservas
+  [OK]    reservas: IDs consecutivos
+  [OK]    reservas: SesionID y SocioID existen
+  [OK]    reservas: no se repite la pareja (SesionID, SocioID)
+  [OK]    reservas: Estado valido
+  [OK]    reservas: FechaReserva entre 7 dias y 1 hora antes de la sesion
+  [OK]    reservas: ninguna FechaReserva posterior a 2026-10-25
+  [OK]    reservas: el socio tenia una membresia no cancelada vigente el dia de la sesion
+  [OK]    reservas: no se reserva antes del primer dia de la membresia
+  [OK]    reservas: sesion Cancelada => todas sus reservas Canceladas
+  [OK]    reservas: las Confirmadas de cada sesion no superan su CupoMaximo
+  [OK]    reservas: ningun socio confirma clases solapadas (maximo 2 por dia)
+
+7. Asistencias
+  [OK]    asistencias: ReservaID existe
+  [OK]    asistencias: ReservaID sin repetir
+  [OK]    asistencias: solo reservas Confirmadas de sesiones Realizadas
+  [OK]    asistencias: toda reserva Confirmada de sesion Realizada tiene su fila
+  [OK]    asistencias: Asistio es 0 o 1
+  [OK]    asistencias: Asistio = 0 => FechaCheckIn vacia; Asistio = 1 => con fecha
+  [OK]    asistencias: check-in entre 15 min antes y 10 min despues del inicio
+
+Filas por archivo:
+  socios.csv: 2000
+  planes.csv: 5
+  entrenadores.csv: 15
+  tipos_clase.csv: 12
+  salas.csv: 5
+  membresias.csv: 4800
+  sesiones.csv: 3000
+  pagos.csv: 9199
+  reservas.csv: 24545
+  asistencias.csv: 21284
+
+RESUMEN: 82 comprobaciones, 82 OK, 0 con falla
+RESULTADO: LOS DATOS CUMPLEN TODAS LAS REGLAS

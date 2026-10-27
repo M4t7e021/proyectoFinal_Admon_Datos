@@ -1,0 +1,6 @@
+PlanID,Nombre,DuracionDias,Precio,Estado
+1,Semanal,7,12.0,Activo
+2,Mensual,30,35.0,Activo
+3,Trimestral,90,90.0,Activo
+4,Semestral,180,165.0,Activo
+5,Anual,365,300.0,Activo

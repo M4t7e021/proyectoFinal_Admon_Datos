@@ -1,0 +1,13 @@
+TipoClaseID,Nombre,Descripcion,DuracionMin,Nivel
+1,Yoga,Posturas y respiración para flexibilidad y calma,60,Principiante
+2,Pilates,Fortalecimiento del core y mejora de la postura,55,Intermedio
+3,Spinning,Ciclismo indoor con música y ritmo,45,Intermedio
+4,Zumba,Baile fitness con ritmos latinos,50,Principiante
+5,CrossFit,Entrenamiento de alta intensidad con pesas y gimnasia,60,Avanzado
+6,Funcional,Circuitos de fuerza con el peso corporal,45,Intermedio
+7,Boxeo,Técnica de golpeo y acondicionamiento físico,60,Intermedio
+8,HIIT,Intervalos de alta intensidad,30,Avanzado
+9,Aeróbicos,Ejercicio cardiovascular coreografiado,50,Principiante
+10,Estiramiento,Movilidad y relajación muscular,30,Principiante
+11,TRX,Entrenamiento en suspensión,45,Intermedio
+12,Baile,Coreografías de ritmos modernos,60,Principiante
