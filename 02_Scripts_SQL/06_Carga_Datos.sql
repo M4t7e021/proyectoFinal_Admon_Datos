@@ -3,8 +3,8 @@ GO
 
 SET NOCOUNT ON;
 
-DECLARE @ruta    NVARCHAR(400) = N'/var/opt/mssql/datos_csv/';   
-DECLARE @limpiar BIT           = 1;                             
+DECLARE @ruta NVARCHAR(400) = N'/var/opt/mssql/datos_csv/';
+DECLARE @limpiar BIT           = 1;       
 
 DECLARE @archivos TABLE (
     Orden   INT PRIMARY KEY,

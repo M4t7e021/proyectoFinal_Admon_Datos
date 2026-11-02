@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mateo\\Desktop\\proyectoFinal_Admon_Datos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateo\\Desktop\\proyectoFinal_Admon_Datos\\02_Scripts_SQL\\01_Estructura_Tablas.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02_Scripts_SQL\\01_Estructura_Tablas.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateo\\Desktop\\proyectoFinal_Admon_Datos\\02_Scripts_SQL\\02_Seguridad_Usuarios_Roles.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02_Scripts_SQL\\02_Seguridad_Usuarios_Roles.sql||{B5A506EB-11BE-4782-9A18-21265C2CA0B4}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "01_Estructura_Tablas.sql - localhost,1434.GimnasioDB (sa (64))",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\proyectoFinal_Admon_Datos\\02_Scripts_SQL\\01_Estructura_Tablas.sql",
+              "RelativeDocumentMoniker": "02_Scripts_SQL\\01_Estructura_Tablas.sql",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\proyectoFinal_Admon_Datos\\02_Scripts_SQL\\01_Estructura_Tablas.sql - localhost,1434.GimnasioDB (sa (64))",
+              "RelativeToolTip": "02_Scripts_SQL\\01_Estructura_Tablas.sql - localhost,1434.GimnasioDB (sa (64))",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-11-01T18:28:06.606Z",
+              "EditorCaption": " - localhost,1434.GimnasioDB (sa (64))"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "02_Seguridad_Usuarios_Roles.sql - localhost,1434.master (sa (65))",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\proyectoFinal_Admon_Datos\\02_Scripts_SQL\\02_Seguridad_Usuarios_Roles.sql",
+              "RelativeDocumentMoniker": "02_Scripts_SQL\\02_Seguridad_Usuarios_Roles.sql",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\proyectoFinal_Admon_Datos\\02_Scripts_SQL\\02_Seguridad_Usuarios_Roles.sql - localhost,1434.master (sa (65))",
+              "RelativeToolTip": "02_Scripts_SQL\\02_Seguridad_Usuarios_Roles.sql - localhost,1434.master (sa (65))",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-11-01T18:28:09.551Z",
+              "EditorCaption": " - localhost,1434.master (sa (65))"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
