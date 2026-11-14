@@ -1,22 +1,9 @@
-----VISTA PARA EL PRIMER DASHBOARD
+
 
 use GimnasioDB;
 go
 
-create or alter view reportes.vw_TopClasesUltimoAno as
-select  
-    DATEFROMPARTS(year(se.FechaHora), month(se.FechaHora), 1) Mes,
-    tc.Nombre Clase,
-    count(r.ReservaID) TotalReservas
-from clases.Reserva     r
-join clases.SesionClase se on se.SesionID    = r.SesionID
-join clases.TipoClase   tc on tc.TipoClaseID = se.TipoClaseID
-where r.Estado  = 'Confirmada'
- and se.Estado = 'Realizada'
- and se.FechaHora >= DATEADD(MONTH, -12, CAST(GETDATE() AS DATE))
-group by DATEFROMPARTS(year(se.FechaHora), month(se.FechaHora), 1), tc.Nombre;
-go
---VISTA PARA EL SEGUNDO DASHBOARD
+--CREACION DE LA PRIMERA VISTA
 create or alter view reportes.vw_GananciaMembresiasUltimoAno as
 select  
     YEAR(p.FechaPago) Anio,
@@ -34,7 +21,7 @@ group by
     MONTH(p.FechaPago),
     pm.Nombre;
 GO
----VISTA PARA EL TERCER DASHBOARD
+--CREACION DE LA SEGUNDA VISTA A UTILIAR
 
 create or alter view reportes.vw_TopEntrenadoresClases as
 select  
