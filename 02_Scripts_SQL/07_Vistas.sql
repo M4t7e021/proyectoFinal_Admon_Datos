@@ -1,5 +1,3 @@
-
-
 use GimnasioDB;
 go
 

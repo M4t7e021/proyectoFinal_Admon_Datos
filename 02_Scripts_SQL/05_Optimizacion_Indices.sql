@@ -1,5 +1,3 @@
-
-
 USE GimnasioDB;
 GO
 SET ANSI_NULLS ON;            
